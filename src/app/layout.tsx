@@ -15,8 +15,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+    <>
+      <head>
+        <title>Manutention Beaujolaise</title>
+        <link rel="icon" href="/Icon.png" />
+      </head>
+      <html lang="en">
+        <body className={`${inter.className}overflow-scroll scrolllg `}>{children}</body>
+      </html>
+    </>
+
   );
 }

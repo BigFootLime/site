@@ -31,3 +31,53 @@ body {
     text-wrap: balance;
   }
 }
+
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+}
+.scrollxs::-webkit-scrollbar {
+  background-color: #c4c4c4;
+  width: 4px;
+  height: 4px;
+}
+
+.scrollsm::-webkit-scrollbar {
+  background-color: #c4c4c4;
+  width: 8px;
+  height: 8px;
+}
+
+.scrolllg::-webkit-scrollbar {
+  background-color: #c4c4c4;
+  width: 12px;
+  height: 12px;
+}
+
+.scrollxl::-webkit-scrollbar {
+  background-color: #c4c4c4;
+  width: 16px;
+  height: 16px;
+}
+
+.scrollxs::-webkit-scrollbar-thumb,
+.scrollsm::-webkit-scrollbar-thumb,
+.scrolllg::-webkit-scrollbar-thumb,
+.scrollxl::-webkit-scrollbar-thumb {
+  background-color: #5c5c5c;
+  border-radius: 5px;
+}
